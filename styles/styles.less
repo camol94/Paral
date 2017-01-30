@@ -292,6 +292,8 @@ section {
 		.size(100%;100%);		
 		///// progress
 		.progress{
+			box-shadow: none;
+			-webkit-box-shadow: none;
 			background: @main-bg-color;
 		  height: 90px;
 		  margin: 4px;		  
@@ -304,15 +306,28 @@ section {
 		  width: 90px; height: 45px; /* Half circle (overflow) */
 		  margin-bottom: -14px; /* bring the numbers up */
 		}
+		.top-to-bottom {
+    border-width: 3px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
+}
 		.bar{		  
 		  text-align: center;
 		  margin: 0 auto;		
 		  width: 90px; height: 90px; /* full circle! */
-		  border-radius: 50%;
-		  
-		  border: 5px solid red;       /* half red, */
-		  border-bottom-color: green;  /* half green */
-		  border-right-color: green;
+		  border-radius: 50%;		  
+		  border: 15px solid @elements-bg;      /* half red, */
+		  border-bottom-color: @second-color;  
+		  border-right-color: @second-color;
 		}
 	}
 }
