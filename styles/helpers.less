@@ -1,0 +1,52 @@
+//HELPERY//
+@desktop: ~"all and (min-width: 890px)";
+
+.no-style-list {
+	list-style-type: none;
+}
+
+.size(@width;@height) {
+	width: @width;
+	height: @height;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.basic-transition(@time) {
+	transition: all @time ease-in-out;
+}
+// wyrownanie w pionie
+.center-vertical {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+// Elementy plywajace
+.overflow-fix  {
+	overflow: auto;
+}
+
+.clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+// narozniki
+.border-radius-single(@radius) {
+	border-radius: @radius;
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+}
