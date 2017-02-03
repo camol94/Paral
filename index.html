@@ -9,26 +9,36 @@
     <!-- jQuery 182 -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Bootstrap -->
+    <!-- bxSlider CSS file -->
+	<link href="styles/jquery.bxslider.css" rel="stylesheet" />
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
+
      <!-- style less -->
     <link rel="stylesheet" type="text/less" href="styles/main.less">
     <!-- JS LESS -->
     <script src="js/less.min.js"></script>
-    <!-- Font Awesome -->   
+    <!-- STYLE CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="styles/font-awesome.css">
     <!-- LIGHTBOX -->
     <link href="styles/lightbox.css" rel="stylesheet">
     <script src="js/lightbox.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- jQuery library (served from Google) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js"></script>
+
 </head>
 <body>
 <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -40,23 +50,72 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a data-toggle="collapse" data-target=".navbar-collapse" href="#">Home</a></li>
-                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#services">Services</a></li>
-                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#portfolio">Portfolio</a></li>
-                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#pricing">Prices</a></li>
-                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#contact">Contact</a></li>
+                <li class="active">
+                	<a class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#">Home</a>
+                	<a class="hidden-xs" href="#" class="visible-xs">Home</a>
+                </li>
+                <li>
+                	<a class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#services">Services</a>
+                	<a class="hidden-xs" href="#services">Services</a>
+                </li>
+                <li>
+                	<a class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#portfolio">Portfolio</a>
+                	<a class="hidden-xs" href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                	<a class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#pricing">Prices</a>
+                	<a class="hidden-xs" href="#pricing">Prices</a>
+                </li>
+
+                <li>
+                	<a class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#our-team">Our Team</a>
+                	<a class="hidden-xs" href="#our-team">Our Team</a>
+                </li>
+                <li>
+                	<a class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#skills">Our Skills</a>
+                	<a class="hidden-xs" href="#skills">Our Skills</a>
+                </li>
+                <li>
+                	<a class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#opinions">Opinions</a>
+                	<a class="hidden-xs" href="#opinions">Opinions</a>
+                </li>
+                <li>
+                	<a class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#contact">Contact</a>
+                	<a class="hidden-xs" href="#contact">Contact</a>
+                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 <!-- SEKCJA SLIDERA -->
 <section class="slider">
-	<div class="container">
-		SLIDER<br><br><br><br>
-	</div>
+	
+		<ul class="bxslider" id="main-slider">
+			<li>
+				<div class="main-slide-1">
+					<div class="container">
+						<div class="main-slide-content">
+							<h1>Lorem ipsum!</h1>
+							<p>Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>					
+				</div>
+			</li>
+			<li>
+				<div class="main-slide-2">
+					<div class="container">
+						<div class="main-slide-content">
+							<h1>Ipsum Lorem!</h1>
+							<p>Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	
 </section>
 <!-- SEKCJA OUR SERVICES -->
-<section class="services">
+<section class="services" id="services">
 	<div class="container">
 		<div class="section-title"><h1>Our Services</h1></div>
 		<div class="col-md-3 col-sm-6">
@@ -92,13 +151,14 @@
 <!-- SEKCJA BANNER>FOLLOW/PURCHAISE -->
 <section class="banner follow">
 	<div class="container">
-		BANNER FOLLOW/PURCHAISE
+		<h2>Lorem ipsum dolor sit amet.</h2><br>
+		<a href="" class="button">LOREM</a> <a href="" class="button">LOREM</a>
 	</div>
 </section>
 <!-- SEKCJA PORTFOLIO -->
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
 	<div class="container">
-		<div class="section-title"><h1>Portfolio</h1></div>
+		<div class="section-title" ><h1>Portfolio</h1></div>
 		<div class="col-md-3 col-sm-6">
 			<div class="content" style="background: url('images/portfolio/1.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
 				<div class="overlay"></div>
@@ -112,11 +172,11 @@
 					<a href="images/portfolio/1.jpg" data-lightbox="image-1" data-title="My caption">
 						<i class="fa fa-search search"></i>
 					</a>
-					<a href=""> 
-						<i class="fa fa-comment-o comment"> 
+					<a href="">
+						<i class="fa fa-comment-o comment">
 						<h4> 33 </h4>
 					</i>
-					</a>				
+					</a>
 				</h5>
 				</span>
 
@@ -135,11 +195,11 @@
 					<a href="images/portfolio/2.jpg" data-lightbox="image-1" data-title="My caption">
 						<i class="fa fa-search search"></i>
 					</a>
-					<a href=""> 
-						<i class="fa fa-comment-o comment"> 
+					<a href="">
+						<i class="fa fa-comment-o comment">
 						<h4> 33 </h4>
 					</i>
-					</a>				
+					</a>
 				</h5>
 				</span>
 			</div>
@@ -157,11 +217,11 @@
 					<a href="images/portfolio/3.jpg" data-lightbox="image-1" data-title="My caption">
 						<i class="fa fa-search search"></i>
 					</a>
-					<a href=""> 
-						<i class="fa fa-comment-o comment"> 
+					<a href="">
+						<i class="fa fa-comment-o comment">
 						<h4> 33 </h4>
 					</i>
-					</a>				
+					</a>
 				</h5>
 				</span>
 			</div>
@@ -179,11 +239,11 @@
 					<a href="images/portfolio/4.jpg" data-lightbox="image-1" data-title="My caption">
 						<i class="fa fa-search search"></i>
 					</a>
-					<a href=""> 
-						<i class="fa fa-comment-o comment"> 
+					<a href="">
+						<i class="fa fa-comment-o comment">
 						<h4> 33 </h4>
 					</i>
-					</a>				
+					</a>
 				</h5>
 				</span>
 			</div>
@@ -201,11 +261,11 @@
 					<a href="images/portfolio/5.jpg" data-lightbox="image-1" data-title="My caption">
 						<i class="fa fa-search search"></i>
 					</a>
-					<a href=""> 
-						<i class="fa fa-comment-o comment"> 
+					<a href="">
+						<i class="fa fa-comment-o comment">
 						<h4> 33 </h4>
 					</i>
-					</a>				
+					</a>
 				</h5>
 				</span>
 			</div>
@@ -223,11 +283,11 @@
 					<a href="images/portfolio/6.jpg" data-lightbox="image-1" data-title="My caption">
 						<i class="fa fa-search search"></i>
 					</a>
-					<a href=""> 
-						<i class="fa fa-comment-o comment"> 
+					<a href="">
+						<i class="fa fa-comment-o comment">
 						<h4> 33 </h4>
 					</i>
-					</a>				
+					</a>
 				</h5>
 				</span>
 			</div>
@@ -245,11 +305,11 @@
 					<a href="images/portfolio/7.jpg" data-lightbox="image-1" data-title="My caption">
 						<i class="fa fa-search search"></i>
 					</a>
-					<a href=""> 
-						<i class="fa fa-comment-o comment"> 
+					<a href="">
+						<i class="fa fa-comment-o comment">
 						<h4> 33 </h4>
 					</i>
-					</a>				
+					</a>
 				</h5>
 				</span>
 			</div>
@@ -267,11 +327,11 @@
 					<a href="images/portfolio/8.jpg" data-lightbox="image-1" data-title="My caption">
 						<i class="fa fa-search search"></i>
 					</a>
-					<a href=""> 
-						<i class="fa fa-comment-o comment"> 
+					<a href="">
+						<i class="fa fa-comment-o comment">
 						<h4> 33 </h4>
 					</i>
-					</a>				
+					</a>
 				</h5>
 				</span>
 			</div>
@@ -279,9 +339,10 @@
 	</div>
 </section>
 <!-- SEKCJA BANNER PRICING TABLE -->
-<section class="banner pricing">
+<section class="banner pricing" id="pricing">
 	<div class="container">
-		PRICING TABLE
+		<h2>Lorem ipsum dolor sit amet.</h2>
+		<h3>Lorem ipsum dolor.</h3>
 	</div>
 </section>
 <!-- SEKCJA OUR PRICE -->
@@ -302,7 +363,7 @@
 					<li><span>1x</span> option 5</li>
 					<li><a href="" class="button">Purchaise</a></li>
 				</ul>
-				
+
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6">
@@ -317,7 +378,7 @@
 					<li><span>1x</span> option 5</li>
 					<li><a href="" class="button">Purchaise</a></li>
 				</ul>
-				
+
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6">
@@ -332,7 +393,7 @@
 					<li><span>1x</span> option 5</li>
 					<li><a href="" class="button">Purchaise</a></li>
 				</ul>
-				
+
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6">
@@ -347,7 +408,7 @@
 					<li><span>1x</span> option 5</li>
 					<li><a href="" class="button">Purchaise</a></li>
 				</ul>
-				
+
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6">
@@ -362,7 +423,7 @@
 					<li><span>1x</span> option 5</li>
 					<li><a href="" class="button">Purchaise</a></li>
 				</ul>
-				
+
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6">
@@ -377,26 +438,44 @@
 					<li><span>1x</span> option 5</li>
 					<li><a href="" class="button">Purchaise</a></li>
 				</ul>
-				
+
 			</div>
 		</div>
 	</div>
 </section>
 <!-- SEKCJA OPINIONS -->
-<section class="opinions">
+<section class="opinions" id="opinions">
 	<div class="container">
 		<div class="section-title-second"><h1><span>Clients About Us</span></h1></div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo necessitatibus ducimus, praesentium temporibus modi.</p>
+		<ul class="bxslider" id="opinions-slider">
+			<li>
+				<p>Vestibulum ante ipsum primis in lum ante ipsum primis in faucibus orci orci lum ante luctus et ultrices posuere cubilia Curae; Donec alit urna scelerisque ac.</p>
+				<h3>Tadeusz Pierwszy</h3>
+			</li>
+			<li>
+				<p>Vestibulum ante ipsum primis in lum ante ipsum primis in faucibus orci orci lum ante luctus et ultrices posuere cubilia Curae; Donec alit urna scelerisque ac.</p>
+				<h3>Tadeusz Drugi</h3>
+			</li>
+			<li>
+				<p>Vestibulum ante ipsum primis in lum ante ipsum primis in faucibus orci orci lum ante luctus et ultrices posuere cubilia Curae; Donec alit urna scelerisque ac.</p>
+				<h3>Tadeusz Trzeci</h3>
+			</li>
+			<li>
+				<p>Vestibulum ante ipsum primis in lum ante ipsum primis in faucibus orci orci lum ante luctus et ultrices posuere cubilia Curae; Donec alit urna scelerisque ac.</p>
+				<h3>Tadeusz Czwarty</h3>
+			</li>
+		</ul>
 	</div>
 </section>
 <!-- SEKCJA BANNER OUR TEAM -->
-<section class="banner our-team">
+<section class="banner our-team" id="our-team">
 	<div class="container">
-		OUR TEAM
+		<h2>Lorem ipsum dolor sit amet.</h2>
+		<h3>Lorem ipsum dolor.</h3>
 	</div>
 </section>
 <!-- SEKCJA ABOUT US -->
-<section class="about-us">
+<section class="about-us" >
 	<div class="container">
 		<div class="section-title"><h1>About Us</h1></div>
 		<div class="col-md-3 col-sm-6">
@@ -435,7 +514,7 @@
 </section>
 <!-- SEKCJA SKILLS -->
 
-<section class="skills">
+<section class="skills" id="skills">
 	<div class="container">
 		<div class="section-title-second"><h1><span>Our Skills</span></h1></div>
 		<div class="col-md-2 col-xs-4">
@@ -510,34 +589,56 @@
 <!-- SEKCJA BANER YOU LOOK -->
 <section class="banner youlook">
 	<div class="container">
-		YOU LOOK
+		<h2>Lorem ipsum dolor sit amet.</h2>
+		<h3>Lorem ipsum dolor.</h3>
 	</div>
 </section>
 <!-- SEKCJA CONTACT US -->
-<section class="contact">
+<section class="contact" id="contact">
 	<div class="container">
 		<div class="section-title"><h1>Contact Us</h1></div>
 		<div class="col-sm-8">
-			<div class="content">8</div>
+			<div class="content mail">
+				<h3>Mail</h3>
+				<form action="">
+        			<input id="email" type="email" placeholder="Email">
+        			<input id="name" type="text" placeholder="Your Name"><br>
+        			<textarea name="message" id="message" cols="30" rows="8" placeholder="Your Message"></textarea>
+        			
+				</form>
+				<a type="submit" class="button">Send</a>
+			</div>
 		</div>
 		<div class="col-sm-4">
-			<div class="content">4</div>
+			<div class="content moreinfo">
+				<h3>More Info</h3>
+				<ul>
+					<li>123-456-789</li>
+					<li>info@mail.mail</li>
+					<li>skype: skype</li>
+					<li> </li>
+					<li>Your Name</li>
+					<li>Country and City</li>
+					<li>Street</li>
+					<li><a href="" class="button">Contact</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>
 <!-- SEKCJA SOCIAL MEDIA -->
 <section class="banner social">
 	<div class="container">
-	<h1>Connect with us</h1>
+	<h2>Connect with us</h2>
 		<ul>
-			<li><i class="fa fa-facebook"></i></li>
-			<li><i class="fa fa-facebook"></i></li>
-			<li><i class="fa fa-facebook"></i></li>
-			<li><i class="fa fa-facebook"></i></li>
-			<li><i class="fa fa-facebook"></i></li>
-			<li><i class="fa fa-facebook"></i></li>
-			<li><i class="fa fa-facebook"></i></li>
-			<li><i class="fa fa-facebook"></i></li>
+			<li><a href=""><i class="fa fa-facebook"></i></a></li>
+			<li><a href=""><i class="fa fa-twitter"></i></a></li>
+			<li><a href=""><i class="fa fa-github"></i></a></li>
+			<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+			<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+			<li><a href=""><i class="fa fa-skype"></i></a></li>
+			<li><a href=""><i class="fa fa-rss"></i></a></li>
+			<li><a href=""><i class="fa fa-git"></i></a></li>
 		</ul>
 	</div>
 </section>
@@ -545,28 +646,83 @@
 <footer>
 	<div class="container">
 		<div class="col-sm-4">
-			<div class="content">1</div>
+			<div class="content tweets">
+				<h3>Recent Tweets</h3>
+				<div class="tweet">
+					<span><i class="fa fa-twitter"></i> author, 13.10.2016</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, officiis.</p>
+				</div>
+				<div class="tweet">
+					<span><i class="fa fa-twitter"></i> author, 13.10.2016</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, officiis.</p>
+				</div>
+				<div class="tweet">
+					<span><i class="fa fa-twitter"></i> author, 13.10.2016</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, officiis.</p>
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-4">
-			<div class="content">1</div>
+			<div class="content posts">
+				<h3>Recent Posts</h3>
+				<div class="post">
+					<span><i class="fa fa-link"></i> author, 13.10.2016</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, officiis.</p>
+				</div>
+				<div class="post">
+					<span><i class="fa fa-link"></i> author, 13.10.2016</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, officiis.</p>
+				</div>
+				<div class="post">
+					<span><i class="fa fa-link"></i> author, 13.10.2016</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, officiis.</p>
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-4">
-			<div class="content">1</div>
+			<div class="content photos">
+				<h3>Photo Stream</h3>
+				<div class="col-xs-3"><img src="images/portfolio/1.jpg" alt=""></div>
+				<div class="col-xs-3"><img src="images/portfolio/2.jpg" alt=""></div>
+				<div class="col-xs-3"><img src="images/portfolio/3.jpg" alt=""></div>
+				<div class="col-xs-3"><img src="images/portfolio/4.jpg" alt=""></div>
+				<div class="col-xs-3"><img src="images/portfolio/5.jpg" alt=""></div>
+				<div class="col-xs-3"><img src="images/portfolio/6.jpg" alt=""></div>
+				<div class="col-xs-3"><img src="images/portfolio/7.jpg" alt=""></div>
+				<div class="col-xs-3"><img src="images/portfolio/8.jpg" alt=""></div>
+				<div class="col-xs-3"><img src="images/portfolio/1.jpg" alt=""></div>
+				<div class="col-xs-3"><img src="images/portfolio/2.jpg" alt=""></div>
+			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container-fluid copy">
 		<div class="col-12">
-			<div class="content">12</div>
+			<div class="content">Code by <a href="http://camol94.github.io" target="_blank">Camol</a> 2017.</div>
 		</div>
 	</div>
 </footer>
 <script>
+$(document).ready(function(){
+  $('#opinions-slider').bxSlider({
+			mode: 'vertical',
+			auto: true,
+			controls: false,
+			pager: false
+		});
+  $('#main-slider').bxSlider({
+			mode: 'horizontal',
+			auto: true,
+			controls: false,
+			pager: false
+		});
+});
 lightbox.option({
       'resizeDuration': 200,
       'wrapAround': true
     })
+
 $(".progress").each(function(){
-  
+
   var $bar = $(this).find(".bar");
   var $val = $(this).find("span");
   var perc = parseInt( $val.text(), 10);
@@ -584,6 +740,5 @@ $(".progress").each(function(){
   });
 });
 </script>
-
 </body>
 </html>
