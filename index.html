@@ -89,7 +89,7 @@
 </nav>
 <!-- SEKCJA SLIDERA -->
 <section class="slider">	
-		<ul class="bxslider" id="main-slider">
+		<ul class="bxslider hideonload" id="main-slider">
 			<li>
 				<div class="main-slide-1">
 					<div class="container">
@@ -149,7 +149,7 @@
 </section>
 <!-- SEKCJA BANNER>FOLLOW/PURCHAISE -->
 <section class="banner follow">
-	<div class="container">
+	<div class="hideme container">
 		<h2>Lorem ipsum dolor sit amet.</h2><br>
 		<a href="" class="button">LOREM</a> <a href="" class="button">LOREM</a>
 	</div>
@@ -339,7 +339,7 @@
 </section>
 <!-- SEKCJA BANNER PRICING TABLE -->
 <section class="banner pricing" id="pricing">
-	<div class="container">
+	<div class="hideme container">
 		<h2>Lorem ipsum dolor sit amet.</h2>
 		<h3>Lorem ipsum dolor.</h3>
 	</div>
@@ -468,7 +468,7 @@
 </section>
 <!-- SEKCJA BANNER OUR TEAM -->
 <section class="banner our-team" id="our-team">
-	<div class="container">
+	<div class="hideme container">
 		<h2>Lorem ipsum dolor sit amet.</h2>
 		<h3>Lorem ipsum dolor.</h3>
 	</div>
@@ -587,7 +587,7 @@
 </section>
 <!-- SEKCJA BANER YOU LOOK -->
 <section class="banner youlook">
-	<div class="container">
+	<div class="hideme container">
 		<h2>Lorem ipsum dolor sit amet.</h2>
 		<h3>Lorem ipsum dolor.</h3>
 	</div>
@@ -627,7 +627,7 @@
 </section>
 <!-- SEKCJA SOCIAL MEDIA -->
 <section class="banner social">
-	<div class="container">
+	<div class="hideme container">
 	<h2>Connect with us</h2>
 		<ul>
 			<li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -700,44 +700,6 @@
 		</div>
 	</div>
 </footer>
-<script>
-$(document).ready(function(){
-  $('#opinions-slider').bxSlider({
-			mode: 'vertical',
-			auto: true,
-			controls: false,
-			pager: false
-		});
-  $('#main-slider').bxSlider({
-			mode: 'horizontal',
-			auto: true,
-			controls: false,
-			pager: false
-		});
-});
-lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
-
-$(".progress").each(function(){
-
-  var $bar = $(this).find(".bar");
-  var $val = $(this).find("span");
-  var perc = parseInt( $val.text(), 10);
-
-  $({p:0}).animate({p:perc}, {
-    duration: 3000,
-    easing: "swing",
-    step: function(p) {
-      $bar.css({
-        transform: "rotate("+ (45+(p*1.8)) +"deg)", // 100%=180° so: ° = % * 1.8
-        // 45 is to add the needed rotation to have the green borders at the bottom
-      });
-      $val.text(p|0);
-    }
-  });
-});
-</script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
