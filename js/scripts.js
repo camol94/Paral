@@ -48,7 +48,6 @@ $(".progress").each(function(){
   var $bar = $(this).find(".bar");
   var $val = $(this).find("span");
   var perc = parseInt( $val.text(), 10);
-
   $({p:0}).animate({p:perc}, {
     duration: 3000,
     easing: "swing",
@@ -61,3 +60,22 @@ $(".progress").each(function(){
     }
   });
 });
+  $("#all").click(function(){
+        $(".all").show();
+    });
+    $("#cat1").click(function(){
+        $(".cat1").show();
+        $(".cat2").hide();
+        $(".cat3").hide();
+
+    });
+    $("#cat2").click(function(){
+        $(".cat1").hide();
+        $(".cat2").show();
+        $(".cat3").hide();
+    });
+    $("#cat3").click(function(){
+        $(".cat1").hide();
+        $(".cat2").hide();
+        $(".cat3").show();
+    });

@@ -7,9 +7,6 @@ body {
 .hideme {
 	opacity: 0;
 }
-.hideonload {
-	display: hidden;
-}
 img {
 	max-width: 100%;
 	vertical-align: middle;
@@ -143,8 +140,15 @@ section {
 }
 
 .portfolio {
+	.section-title {
+		.center;
+	}
+	button {
+		border: none;
+	}
 	margin: 0 auto;
 	.content {
+		border: 5px solid @first-color;
 		padding: 5px;
 		margin: 5px auto-5px;
 		max-width: 410px;
@@ -154,6 +158,9 @@ section {
 		}
 		position: relative;		
 		min-height: 280px;
+		&:hover {
+			border-color: @second-color;
+		}
 		
 	}
 
@@ -387,14 +394,22 @@ section {
 		.right;
 	}
 	.mail {
-		width: 90%;
-		margin: 0 auto;
-
+		.left;
+		margin: 1% auto;
+			width: 90%;
+		form {
+			padding: 8px 0;
+		}
+		a {
+			.left;
+			margin-left: 5px;
+		}
 		h3 {
 			font-size: 22px;
 			border-bottom: 2px solid @elements-bg;
 			margin-bottom: 10px;
-			padding: 8px 0;			
+			padding: 8px 0;
+			.left;		
 		}
 		input {
 			width: 48%;
@@ -417,14 +432,14 @@ section {
 	.moreinfo {
 		width: 90%;
 		margin: 0 auto;
-		.left;
-		
+		.left;		
 		h3 {
 			font-size: 22px;
 			border-bottom: 2px solid @elements-bg;
 			padding: 8px 0;	
 		}
 		ul {
+			padding: 0 5px 0;
 			li {
 				padding: 8px 0;
 			}
